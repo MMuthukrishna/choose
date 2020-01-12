@@ -306,7 +306,7 @@ static BOOL SDReturnStringOnMismatch;
     self.listTableView = [[SDTableView alloc] init];
     [self.listTableView setDataSource: self];
     [self.listTableView setDelegate: self];
-    [self.listTableView setBackgroundColor: [NSColor clearColor]];
+    [self.listTableView setBackgroundColor: [NSColor blackColor]];
     [self.listTableView setHeaderView: nil];
     [self.listTableView setAllowsEmptySelection: NO];
     [self.listTableView setAllowsMultipleSelection: NO];
@@ -404,7 +404,7 @@ static BOOL SDReturnStringOnMismatch;
     if ([[aTableView selectedRowIndexes] containsIndex:rowIndex])
         [aCell setBackgroundColor: [SDHighlightBackgroundColor colorWithAlphaComponent: 0.5]];
     else
-        [aCell setBackgroundColor: [NSColor clearColor]];
+        [aCell setBackgroundColor: [NSColor blackColor]];
 
     [aCell setDrawsBackground:YES];
 }
