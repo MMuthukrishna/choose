@@ -643,7 +643,7 @@ static void usage(const char* name) {
     printf(" -w [50]      set width of choose window\n");
     printf(" -f [Menlo]   set font used by choose\n");
     printf(" -s [26]      set font size used by choose\n");
-    printf(" -c [0000FF]  highlight color for matched string\n");
+    printf(" -c [00FF00]  highlight color for matched string\n");
     printf(" -b [222222]  background color of selected element\n");
     printf(" -u           disable underline and use background for matched string\n");
     printf(" -m           return the query string in case it doesn't match any item\n");
@@ -656,7 +656,7 @@ int main(int argc, const char * argv[]) {
 
         SDReturnsIndex = NO;
         SDUnderlineDisabled = NO;
-        const char* hexColor = "0000FF";
+        const char* hexColor = "00FF00";
         const char* hexBackgroundColor = "222222";
         const char* queryFontName = "Menlo";
         CGFloat queryFontSize = 26.0;
