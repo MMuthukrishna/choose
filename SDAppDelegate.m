@@ -226,7 +226,7 @@ static BOOL SDReturnStringOnMismatch;
 - (void) setupWindow:(NSRect)winRect {
     BOOL usingYosemite = (NSClassFromString(@"NSVisualEffectView") != nil);
 
-    NSUInteger styleMask = usingYosemite ? (NSFullSizeContentViewWindowMask | NSTitledWindowMask) : NSBorderlessWindowMask;
+    NSUInteger styleMask = usingYosemite ? (NSFullSizeContentViewWindowMask | NSTitledWindowMask) : NSUtilityWindowMask;
     self.window = [[SDMainWindow alloc] initWithContentRect: winRect
                                                   styleMask: styleMask
                                                     backing: NSBackingStoreBuffered
@@ -240,7 +240,7 @@ static BOOL SDReturnStringOnMismatch;
         [blur setAutoresizingMask: NSViewWidthSizable | NSViewHeightSizable ];
         blur.material = NSVisualEffectMaterialLight;
         blur.state = NSVisualEffectBlendingModeBehindWindow;
-        [[self.window contentView] addSubview: blur];
+//        [[self.window contentView] addSubview: blur];
     }
 }
 
