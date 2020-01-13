@@ -660,7 +660,7 @@ int main(int argc, const char * argv[]) {
         const char* hexBackgroundColor = "222222";
         const char* queryFontName = "Ubuntu Mono";
         CGFloat queryFontSize = 26.0;
-        SDNumRows = 10;
+        SDNumRows = 15;
         SDReturnStringOnMismatch = NO;
         SDPercentWidth = -1;
 
