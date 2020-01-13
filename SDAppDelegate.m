@@ -658,7 +658,7 @@ int main(int argc, const char * argv[]) {
         SDUnderlineDisabled = NO;
         const char* hexColor = "00FF00";
         const char* hexBackgroundColor = "222222";
-        const char* queryFontName = "Menlo";
+        const char* queryFontName = "Ubuntu Mono";
         CGFloat queryFontSize = 26.0;
         SDNumRows = 10;
         SDReturnStringOnMismatch = NO;
